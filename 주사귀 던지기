@@ -1,0 +1,5 @@
+from scipy import stats
+import numpy as np
+
+stats.ttest_ind(np.random.randint(1,7,2000), 
+                np.random.randint(1,7,2000))

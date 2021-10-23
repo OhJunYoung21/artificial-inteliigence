@@ -14,3 +14,18 @@ leg.fit(x.reshape(-1,1),y)  #leg라는 함수를 만들고 거기에 fit문법�
 
 print(leg.coef_)
 print(leg.intercept_)
+
+import pandas as pd
+num_1 = 200
+x1 = np.random.randn(num_1)
+x2 = np.random.randn(num_1)
+
+y = 2*x1 + 3*x2
+
+leg = LinearRegression()
+X = pd.DataFrame({'x1':x1, 'x2':x2})
+leg.fit(X, y)
+
+print(leg.coef_)
+print(leg.intercept_)
+display(X)

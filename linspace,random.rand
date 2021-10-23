@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as np
+xs = np.linspace(0,2,201)
+print(xs)
+plt.plot(xs,xs**2,c='r')
+plt.plot(xs,xs*2,c='b')
+plt.show()

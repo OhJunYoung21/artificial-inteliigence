@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+n_sample = 200
+x = np.random.randn(n_sample)
+w=2
+b=3
+y=w*x + b + np.random.randn(n_sample)
+plt.scatter(x,y,s=10)
